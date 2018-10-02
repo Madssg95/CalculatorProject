@@ -11,8 +11,9 @@ namespace CalculatorTest
         double num1 = 5.3;
         double num2 = 3.4;
 
-        [TestMethod]
-        public void AddTest()
+        [DataRow(1,1)]
+        [DataTestMethod]
+        public void AddTest(int add1, int add2)
         {
             
             var result = _calc.Add(num1, num2);
